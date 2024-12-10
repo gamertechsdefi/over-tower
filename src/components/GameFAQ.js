@@ -23,7 +23,7 @@ const GameFAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <div className="flex flex-col gap-8 py-16 px-8 md:px-16">
+    <div className="flex flex-col gap-8 py-16 px-8 md:px-16 bg-green-100">
       <h2 className="text-3xl font-bold text-gray-800">FAQ</h2>
       
       <div className="flex flex-col gap-4">

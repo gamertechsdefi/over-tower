@@ -27,7 +27,7 @@ const CommunitySection = () => {
   ];
 
   return (
-    <div className="py-16 px-8 md:px-16">
+    <div className="py-16 px-8 md:px-16 bg-white">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Join the Community</h2>
         <p className="text-gray-600">Connect with players and stay updated with the latest news</p>
