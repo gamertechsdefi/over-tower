@@ -1,60 +1,49 @@
 import React from 'react';
-import { MessageCircle, Share2, PlaySquare, Globe } from 'lucide-react';
+import Link from 'next/link';
+import { FaDiscord, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const CommunitySection = () => {
   const socialLinks = [
     {
       name: "Discord",
-      icon: <MessageCircle className="w-6 h-6" />,
-      description: "Join our active Discord community",
-      color: "hover:text-indigo-500",
-      members: "50K+ Members"
+      icon: <FaDiscord className="w-6 h-6" />,
+      link: "https://discord.gg/yourdiscord"
     },
     {
       name: "Twitter",
-      icon: <Share2 className="w-6 h-6" />,
-      description: "Follow us for latest updates",
-      color: "hover:text-blue-500",
-      members: "25K+ Followers"
+      icon: <FaTwitter className="w-6 h-6" />,
+      link: "https://twitter.com/youraccount"
     },
     {
       name: "YouTube",
-      icon: <PlaySquare className="w-6 h-6" />,
-      description: "Watch gameplay and tutorials",
-      color: "hover:text-red-500",
-      members: "30K+ Subscribers"
-    },
+      icon: <FaYoutube className="w-6 h-6" />,
+      link: "https://youtube.com/@yourchannel"
+    }
   ];
 
   return (
     <div className="py-16 px-8 md:px-16 bg-white">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Join the Community</h2>
-        <p className="text-gray-600">Connect with players and stay updated with the latest news</p>
-      </div>
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+        Join the Community
+      </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-3 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
         {socialLinks.map((platform, index) => (
-          <div
+          <Link
             key={index}
-            className="border-2 border-gray-200 rounded-lg p-6 text-center hover:border-blue-500 transition-all duration-300 cursor-pointer bg-white"
+            href={platform.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-3 p-6 rounded-lg hover:bg-gray-50 transition-colors duration-300"
           >
-            <div className={`flex justify-center mb-4 ${platform.color}`}>
+            <div className="text-gray-600 hover:text-blue-500">
               {platform.icon}
             </div>
             
-            <h3 className="font-semibold text-gray-800 mb-2">
+            <h3 className="font-medium text-gray-800">
               {platform.name}
             </h3>
-            
-            <p className="text-gray-600 text-sm mb-4">
-              {platform.description}
-            </p>
-            
-            <p className="text-green-700 text-sm font-medium">
-              {platform.members}
-            </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

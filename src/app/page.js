@@ -50,7 +50,7 @@ function MainSection() {
 
           <Link
             href=""
-            className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="bg-green-700 hover:bg-green-900 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Join the game
           </Link>

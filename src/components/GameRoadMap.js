@@ -38,8 +38,8 @@ const GameRoadmap = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8 py-16 bg-[#023020]" style={{fontFamily: "VeniteAdoremus, sans-serif"}}>
-      <h2 className="text-5xl md:text-8xl font-bold text-gray-100 px-4 text-center">Roadmap</h2>
+    <div className="flex flex-col gap-8 py-32 bg-[#023020]" style={{fontFamily: "VeniteAdoremus, sans-serif"}}>
+      <h2 className="text-5xl md:text-6xl font-bold text-gray-100 px-4 text-center">Roadmap</h2>
       
       <div className="overflow-x-auto px-8">
         <div className="flex gap-8 md:justify-center min-w-max md:min-w-0 pb-4">

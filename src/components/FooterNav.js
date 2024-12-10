@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
+
+import overLogo from "/public/images/overlogo.png";
 
 const FooterNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    {
-      name: "Home",
-      active: true
-    },
     {
       name: "Play",
       active: false
@@ -33,9 +32,16 @@ const FooterNav = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMenu}
-          className="md:hidden w-full flex items-center justify-between p-4 text-gray-500"
+          className="md:hidden w-full flex items-center justify-between p-4 text-neutral-900"
         >
-          <span className="font-medium">Menu</span>
+          <div className="relative w-8 h-8">
+            <Image
+              src={overLogo}
+              alt="Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
 
@@ -52,6 +58,17 @@ const FooterNav = () => {
           md:border-t-0
           `}
         >
+          {/* Desktop Logo */}
+          <div className="hidden md:block relative w-10 h-10">
+            <Image
+              src={overLogo}
+              alt="Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          {/* Nav Items */}
           {navItems.map((item, index) => (
             <button
               key={index}
@@ -66,8 +83,8 @@ const FooterNav = () => {
                 border-b
                 md:border-b-0
                 ${item.active 
-                  ? 'text-blue-500 bg-gray-50 md:bg-transparent' 
-                  : 'text-gray-500 hover:text-blue-500 hover:bg-gray-50 md:hover:bg-transparent'
+                  ? 'text-neutral-800 bg-gray-50 md:bg-transparent' 
+                  : 'text-neutral-500 hover:text-neutral-600 hover:bg-gray-50 md:hover:bg-transparent'
                 }
               `}
             >

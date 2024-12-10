@@ -33,7 +33,7 @@ const featureData = [
 
 export default function GameFeatures() {
   return (
-    <div className="flex flex-col gap-8 px-8 md:px-16 py-16" style={{fontFamily: "VeniteAdoremus, sans-serif"}}>
+    <div className="flex flex-col gap-8 px-8 md:px-16 py-32 bg-green-100" style={{fontFamily: "VeniteAdoremus, sans-serif"}}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {featureData.map((section, index) => (
           <div 

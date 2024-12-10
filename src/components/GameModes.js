@@ -30,8 +30,8 @@ const GameModes = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-6 px-8 md:px-16 py-16 bg-[#96DED1]" style={{fontFamily: "VeniteAdoremus, sans-serif"}}>
-      <h2 className="text-3xl font-bold text-neutral-800">Game Modes</h2>
+    <div className="flex flex-col gap-6 px-8 md:px-16 py-32 bg-[#96DED1]" style={{fontFamily: "VeniteAdoremus, sans-serif"}}>
+      <h2 className="text-5xl text-center font-bold text-neutral-800">Game Modes</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {modes.map((mode, index) => (
           <div
