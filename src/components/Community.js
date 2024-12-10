@@ -12,7 +12,7 @@ const CommunitySection = () => {
     {
       name: "Twitter",
       icon: <FaTwitter className="w-6 h-6" />,
-      link: "https://twitter.com/youraccount"
+      link: "https://x.com/OverTowerGames"
     },
     {
       name: "YouTube",
