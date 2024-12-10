@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 const GameFAQ = () => {
   const faqs = [
     {
-      question: "How do I earn tokens?",
-      answer: "Players can earn tokens through winning PvP battles, completing daily missions, participating in tournaments, and ranking high on seasonal leaderboards."
+      question: "How do I earn points?",
+      answer: "Players can earn points through completing daily missions, participating in tournaments & PvP and ranking high on seasonal leaderboards."
     },
     {
       question: "Is it free to play?",
