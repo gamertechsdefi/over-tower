@@ -4,7 +4,7 @@ const GameFAQ = () => {
   const faqs = [
     {
       question: "How do I earn points?",
-      answer: "Players can earn points through completing daily missions, participating in tournaments & PvP and ranking high on seasonal leaderboards."
+      answer: "Players can earn points through completing missions, participating in tournaments & PvP and ranking high on leaderboards."
     },
     {
       question: "Is it free to play?",
