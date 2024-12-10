@@ -25,3 +25,8 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'VeniteAdoremus';
+  src: url('../app/fonts//VeniteAdoremus-rgRBA.ttf') format('truetype');
+}
